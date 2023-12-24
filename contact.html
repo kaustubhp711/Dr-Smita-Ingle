@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Awakened Living - Councelling Center</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt  me-2" style="color: #122b8d;"></i>123 Street, New York, USA</small>
+                <small class="ms-4"><i class="fa fa-clock  me-2" style="color: #122b8d;"></i>9.00 am - 9.00 pm</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope  me-2" style="color: #122b8d;"></i>choudhari_v@yahoo.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt  me-2" style="color: #122b8d;"></i>+91 97676 81676</small>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="display-5  m-0" style="color: #122b8d;">Awakened Living</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="feature.html" class="nav-item nav-link">Features</a>
+                    <a href="contact.html" class="nav-item nav-link active">Book An Appointment</a>
+                </div>
+              
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-4 animated slideInDown">Book An Appointment</h1>
+           
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="row g-5">
+
+        <div class="formbold-form-wrapper "      ">
+          <form action="mail.php" method="POST">
+            <div class="formbold-mb-5 ">
+              <label for="name" class="formbold-form-label"> Full Name <em>*</em></label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                class="formbold-form-input"
+                required
+              />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="phone" class="formbold-form-label"> Phone Number <em>*</em></label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                class="formbold-form-input"
+                  required
+              />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="email" class="formbold-form-label"> Email Address <em>*</em></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                class="formbold-form-input"
+                required
+              />
+            </div>
+             <div class="formbold-mb-5 ">
+            <label class="formbold-form-label"> Choose Service <em>*</em></label>
+            <select id="select_box"             class="formbold-form-input"
+            >
+                <option class="btn" value="" selected="selected">Choose</option>
+                <option class="btn" value="1000" >1</option>
+                <option class="btn" value="2000" >2</option>
+                <option class="btn" value="3000">3</option>
+                <option class="btn" value="4000">4</option>
+                <option class="btn" value="5000">5</option>
+                <option class="btn" value="6000">6</option>
+              </select>
+          </div>
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5 w-full">
+                  <label for="date" class="formbold-form-label"> Date <em>*</em></label>
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    class="formbold-form-input"
+                      required
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <label for="time" class="formbold-form-label"> Time (24-Hour Format) <em>*</em></label>
+                  <input
+                    type="time"
+                    name="time"
+                    id="time"
+                    class="formbold-form-input"
+                      required
+                  />
+                </div>
+              </div>
+            </div>
+      
+           
+      
+            <div>
+          <button  class="formbold-btn " style="background-color: #122b8d" >Pay ₹ <span id="check" ></span> </button>
+            </div>
+          </form>
+        </div>
+
+      
+      </div>
+
+
+      </div>
+      
+       <script>
+    let dropdownList = document.getElementById('select_box');
+    let sv = 0;
+    dropdownList.onchange = (ev) =>{
+        sv =dropdownList.value;
+        check.innerHTML = sv;
+      console.log("Selected value is: " + dropdownList.value);
+    }
+  </script>
+
+      
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family: "Inter", Arial, Helvetica, sans-serif;
+        }
+        .formbold-mb-5 {
+          margin-bottom: 20px;
+        }
+        .formbold-pt-3 {
+          padding-top: 12px;
+        }
+        .formbold-main-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 48px;
+        }
+      
+        .formbold-form-wrapper {
+          margin: 0 auto;
+          max-width: 550px;
+          width: 100%;
+          background: white;
+        }
+        .formbold-form-label {
+          display: block;
+          font-weight: 500;
+          font-size: 16px;
+          color: #07074d;
+          margin-bottom: 12px;
+        }
+        .formbold-form-label-2 {
+          font-weight: 600;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+      
+        .formbold-form-input {
+          width: 100%;
+          padding: 12px 24px;
+          border-radius: 6px;
+          border: 1px solid #e0e0e0;
+          background: white;
+          font-weight: 500;
+          font-size: 16px;
+          color: #6b7280;
+          outline: none;
+          resize: none;
+        }
+        .formbold-form-input:focus {
+          border-color: #6a64f1;
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+      
+        .formbold-btn {
+          text-align: center;
+          font-size: 16px;
+          border-radius: 6px;
+          padding: 14px 32px;
+          border: none;
+          font-weight: 600;
+          background-color: #122b8d;
+          color: white;
+          width: 100%;
+          cursor: pointer;
+        }
+        .formbold-btn:hover {
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+      
+        .formbold--mx-3 {
+          margin-left: -12px;
+          margin-right: -12px;
+        }
+        .formbold-px-3 {
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+        .flex {
+          display: flex;
+        }
+        .flex-wrap {
+          flex-wrap: wrap;
+        }
+        .w-full {
+          width: 100%;
+        }
+        @media (min-width: 540px) {
+          .sm\:w-half {
+            width: 50%;
+          }
+        }
+      </style>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        
+
+        <div class="container-fluid bg-dark text-light p-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                       <a class="text-light mb-2" href="./"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                       <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                       <a class="text-light mb-2" href="feature.html"><i class="bi bi-arrow-right text-primary me-2"></i>Features</a>
+
+                       <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                       <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+              
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 97676 81676</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>choudhari_v@yahoo.com</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-light text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="m-0">&copy; <a class="text-light border-bottom" href="#">Awakened Living</a>. All Rights Reserved.
+        </div>
+    <!-- Footer End -->
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
